@@ -7,4 +7,5 @@ def analysis(processgrp, metric):
 		#draw values from normal distribution of each process, processes[process] = samplevalue
 		#calculate mean of samplevalues and store in listofmeans
 	#calculate SD of listofmeans
-	pass
+	df = import_csv("quant_metrics.csv")
+	print(df.head(5))
