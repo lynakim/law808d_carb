@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from utils import import_csv
 
 def analysis(processgrp, metric):
@@ -8,4 +9,6 @@ def analysis(processgrp, metric):
 		#calculate mean of samplevalues and store in listofmeans
 	#calculate SD of listofmeans
 	df = import_csv("quant_metrics.csv")
-	print(df.head(5))
+# 	print(df.head(5))
+	processes = list(set(df["ProcessGroup"].values))
+	
