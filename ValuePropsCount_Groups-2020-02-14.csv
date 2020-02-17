@@ -1,0 +1,33 @@
+"","ProcessGroup","WasteReduction","PerformanceStability","SimultaneousNutrientCRemoval","ReducedWastewaterVolume","ImprovedConstructionMaterials"
+"1","Bacterial-algal flocs",0,1,1,0,0
+"2","Bio-electrocoagulation",0,0,1,0,0
+"3","Bio-electrodialysis",0,1,1,0,0
+"4","Biological Filter",0,0,0,0,0
+"5","CANDO",0,0,0,0,0
+"6","Capacitive Deionization",0,1,0,0,0
+"7","Conventional EBPR",0,1,0,0,0
+"8","Dehydration",0,0,0,1,0
+"9","EBPR with co-precipitation",0,0,0,0,0
+"10","Electrocoagulation",0,0,0,0,0
+"11","Electrodialysis",0,0,0,1,0
+"12","Electrodialysis with stripping and absorption",0,0,0,0,0
+"13","Electrolysis-Integrated Wetland",0,0,0,0,0
+"14","Granular Sludge",0,0,0,0,0
+"15","Ion Exchange/Adsorption",0,0,0,0,0
+"16","Iron-based Autotrophic Denitrification",0,0,0,0,0
+"17","Membrane distillation",0,0,0,0,0
+"18","Microbial Electrolysis Cell",0,0,0,0,0
+"19","Microbial Fuel Cell",0,2,3,0,0
+"20","Nitrite Shunt",0,0,0,0,0
+"21","Oxidation Processes",0,1,1,0,0
+"22","Partial Nitritation-Anammox",0,0,0,0,0
+"23","Phosphate Slag Recovery",0,0,0,0,0
+"24","Phosphoric Acid Recovery",0,0,0,0,0
+"25","Precipitation",0,0,0,0,0
+"26","Purple Phototrophic Bacteria",0,0,0,0,0
+"27","Reduction Processes",1,0,0,0,0
+"28","Simultaneous NDN",0,1,0,0,0
+"29","Stripping and Absorption",0,0,0,1,1
+"30","Sulfur-based nutrient removal",1,2,0,0,0
+"31","Suspended microalgae",0,0,0,0,0
+"32",NA,0,0,0,0,0
