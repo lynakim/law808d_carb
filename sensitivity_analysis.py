@@ -1,8 +1,8 @@
 import pandas as pd
 def analysis(processgrp, metric):
+	#find all processes within processgrp, define processes[]
 	# repeat 10000 times:
-		#find all processes within processgrp, define listofprocesses
-		#draw values from normal distribution of each process in listofprocesses, store in tempvalues
-		#calculate mean of listofprocesses and store in listofmeans
-		#calculate SD of listofmeans
+		#draw values from normal distribution of each process, processes[process] = samplevalue
+		#calculate mean of samplevalues and store in listofmeans
+	#calculate SD of listofmeans
 	pass
