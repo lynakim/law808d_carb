@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from utils import import_csv
+from process_metric_matching import import_csv
 
 def analysis():
 	#find all processes within processgrp, define processes[]
@@ -9,7 +9,7 @@ def analysis():
 		#calculate mean of samplevalues and store in listofmeans
 	#calculate SD of listofmeans
 	table = import_csv()
-	print(table)
+# 	print(table)
 	
 	
 
