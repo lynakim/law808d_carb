@@ -17,7 +17,7 @@ def analysis():
 				sample_list.append(value[i])
 			mean = (sum(sample_list)/len(sample_list)
 			mean_list.append(mean)
-		sensitivity_dict.update({'row['(Group, metric)']': np.std(mean_list)})
+		sensitivity_dict.update({row['(Group, metric)']: np.std(mean_list)})
 	return sensitivity_dict
 
 if __name__ == "__main__":
