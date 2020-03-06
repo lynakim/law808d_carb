@@ -1,17 +1,23 @@
 import pandas as pd
 import numpy as np
-from process_metric_matching import import_csv
+from utils import dataframe
 
 def analysis():
-	#find all processes within processgrp, define processes[]
-	# repeat 10000 times:
-		#draw values from normal distribution of each process, processes[process] = samplevalue
-		#calculate mean of samplevalues and store in listofmeans
-	#calculate SD of listofmeans
-	table = import_csv()
-# 	print(table)
-	
-	
+	df = pd.dataframe
+	sensitivity_dict = {}
+	for index, row in dataframe.iterrows():
+		mean_list = []
+		sample_values = {}
+		for i in row['Value-Std Pair']:
+			sample_values.update({i: np.random.normal(i[0], i[1], 10000))
+		for i in range(0, 10000):
+			sample_list = ()
+			for key, value in sample_values.items():
+				sample_list.append(value[i])
+			mean = (sum(sample_list)/len(sample_list)
+			mean_list.append(mean)
+		sensitivity_dict.update({'row['Value-Std Pair']': np.std(mean_list)
+	return sensitivity_dict
 
 if __name__ == "__main__":
 	analysis()
