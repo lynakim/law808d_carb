@@ -1,11 +1,12 @@
 import pandas as pd
 import numpy as np
-from utils import dataframe
+#from utils import dataframe
+from utils import retrieve_dataframe
 
 def analysis():
-	df = pd.dataframe
+	df = retrieve_dataframe()
 	sensitivity_dict = {}
-	for index, row in dataframe.iterrows():
+	for index, row in df.iterrows():
 		mean_list = []
 		sample_values = {}
 		for i in row['Value-Std Pair']:
