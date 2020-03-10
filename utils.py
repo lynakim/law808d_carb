@@ -9,7 +9,6 @@ def retrieve_dataframe():
     grp_metric_set = set()
 
     for _, row in df.iterrows():
-        print("row", row)
         tup = (row["ProcessGroup"], row["Metric"])
         if tup in grp_metric_set:
             idx = dataframe.index[dataframe['(processgrp, metric)'] == tup].tolist()
@@ -33,3 +32,6 @@ def retrieve_dataframe():
             grp_metric_set.add(tup)
     
     return dataframe
+
+if __name__ == "__main__":
+	retrieve_dataframe()
