@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import csv
 from utils import retrieve_dataframe
 
 def analysis():
@@ -18,9 +19,11 @@ def analysis():
 			mean_list.append(mean)
 		mean_array = np.array(mean_list)
 		sensitivity_dict.update({row['(processgrp, metric)']: np.std(mean_array)})
-		print(index)
-		print(np.std(mean_array))
-	print(sensitivity_dict)
+	csv_file = open("stdev_values.csv", "w")
+	writer = csv.writer(csv_file)
+	for key, value in sensitivity_dict.items():
+		writer.writerow([key, value])
+	csv_file.close()
 	return sensitivity_dict
 
 if __name__ == "__main__":
