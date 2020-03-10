@@ -8,20 +8,18 @@ def analysis():
 	for index, row in df.iterrows():
 		mean_list = []
 		sample_values = {}
-		for i in df.itertuples():
-			pairs = i[2]
-			for i in pairs:
-				sample_values.update({i: np.random.normal(i[0], abs(i[1]), 10000)})
-		for i in range(0, 10000):
+		for i in row['(value, std) pairs']:
+			sample_values.update({i: np.random.normal(i[0], abs(i[1]), 10000)})
+		for k in range(0, 10000):
 			sample_list = []
 			for key, value in sample_values.items():
-				sample_list.append(value[i])
+				sample_list.append(value[k])
 			mean = (sum(sample_list)/len(sample_list))
 			mean_list.append(mean)
 		mean_array = np.array(mean_list)
+		sensitivity_dict.update({row['(processgrp, metric)']: np.std(mean_array)})
 		print(index)
 		print(np.std(mean_array))
-		sensitivity_dict.update({row['(processgrp, metric)']: np.std(mean_array)})
 	print(sensitivity_dict)
 	return sensitivity_dict
 
