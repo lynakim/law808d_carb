@@ -32,6 +32,3 @@ def retrieve_dataframe():
             grp_metric_set.add(tup)
     
     return dataframe
-
-if __name__ == "__main__":
-	retrieve_dataframe()
