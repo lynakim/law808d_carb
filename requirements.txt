@@ -1,0 +1,12 @@
+biosteam==2.29.0
+thermosteam==0.25.7
+exposan==0.0.17
+sphinx
+sphinx_rtd_theme
+nbsphinx
+scikit-learn
+scipy
+SALib
+matplotlib
+seaborn
+sympy

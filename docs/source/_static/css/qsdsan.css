@@ -1,0 +1,24 @@
+code.literal{
+	color: #00A3C5 !important;
+	font-size: 85%;
+	border: none;
+	background: none !important;
+	padding: 0;
+}
+
+/* green: 26AA5E*/
+
+/* Side bar */
+.wy-nav-side p.caption {
+	color: #00A3C5 !important;
+}
+.wy-nav-side code.literal {
+	color: #00A3C5 !important;
+}
+
+.wy-side-nav-search, .wy-nav-top {
+	background: #343131;
+  	color: #00A3C5 !important;
+}
+/* 
+*/
