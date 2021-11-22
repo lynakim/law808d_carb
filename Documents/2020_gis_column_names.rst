@@ -1,0 +1,1 @@
+The columns left to right are: X coord, Y coord, Row #/ID, Fire Name, Reported Size in Acres, GIS Size in Acres, Original Fire ID (as per CalFire fire database), X value, Y value (X and Y  values are repeated at the end -- again, not needed for our purposes)
